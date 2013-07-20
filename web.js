@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
-
+app.use(express.static(__dirname));
 var fs = require('fs');
 
 app.get('/', function(request, response) {
